@@ -1,0 +1,15 @@
+[package]
+name = "tgame"
+version = "0.1.0"
+authors = ["Kārlis Seņko <karlis3p70l1ij@gmail.com>"]
+edition = "2018"
+
+[features]
+
+serialize = ["serde", "serde_derive"]
+
+[dependencies]
+
+termion = "1.5.1"
+serde = { version = "*", optional=true }
+serde_derive = { version = "*", optional=true }
