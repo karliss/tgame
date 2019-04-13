@@ -132,7 +132,7 @@ impl UiWidget for Menu {
             }
             Event::Key(Key::Char('\n')) => {
                 self.result = Some(Some(self.selected));
-                self.event(UiEventType::Result(box self.selected))
+                self.event(UiEventType::Result(Box::new(self.selected)))
             }
 
             Event::Key(Key::Esc) => {
